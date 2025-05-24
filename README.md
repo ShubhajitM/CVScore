@@ -19,5 +19,6 @@ python main.py
 graph TD;
     A[Create Job with detail description] --> B[get job_id]
     B --> C[Upload CVs with Job Id]
-    C --> D[get score in the scale of 0-100 for each of the uploaded CVs]
+    C --> D[CV validation]
+    D --> E[generate score in the scale of 0-100 for each of the uploaded CVs corresponding to job ID using LLM]
 ```
