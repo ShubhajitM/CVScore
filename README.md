@@ -20,6 +20,5 @@ graph TD;
     A[Create Job with detail description] --> B[get job_id]
     B --> C[Upload CVs with Job Id]
     C --> D[CV validation]
-    D --> C[InValid file]
     D --> E[generate score in the scale of 0-100 for each of the uploaded CVs corresponding to job ID using LLM]
 ```
