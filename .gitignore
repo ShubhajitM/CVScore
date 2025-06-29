@@ -2,3 +2,5 @@
 .idea
 __pycache__/
 *.pyc
+app/__pycache__/
+app/routers/__pycache__/
