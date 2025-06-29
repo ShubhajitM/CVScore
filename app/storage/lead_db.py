@@ -12,7 +12,7 @@ load_dotenv()
 
 class LeadEntity:
     def __init__(self):
-        self.dynamodb = boto3.resource('dynamodb')
+        self.dynamodb = boto3.resource('dynamodb', region_name=os.getenv('AWS_REGION', 'ap-south-1'))
         # Make table name configurable via environment variable
         self.table_name = os.getenv('LEADS_TABLE_NAME', 'leads')
         print(f"Using table name: {self.table_name}")
